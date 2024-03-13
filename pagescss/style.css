@@ -98,7 +98,9 @@ a {
   padding: 94px;
   height: 500px;
   background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../assets/imghero.jpg), no-repeat;
+    url(../assets/imghero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .title-hero {
@@ -395,7 +397,7 @@ a {
 }
 
 .img-project img {
-  background-size:cover ;
+  background-size: cover;
 }
 
 .overlay {
