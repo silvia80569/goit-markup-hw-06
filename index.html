@@ -64,25 +64,38 @@
       <div class="modal-content">
         <button type="button" class="close-btn" data-modal-close>&times;</button>
         <h2>Leave your contacts and we will call you back</h2>
-        <form class="form">
+        <form >
+          <div class="form">
           <label for="name">Name</label>
-          <svg class="modal-svg">
-            <use href="./assets/symbol-defs3.svg#icon-name"></use>
-          </svg>
-          <input type="text" id="name" name="name">
+          <div class="input">
+            <svg class="modal-svg">
+              <use href="./assets/symbol-defs3.svg#icon-name"></use>
+            </svg>
+            <input type="text" id="name" name="name" autocomplete="off">
+          </div>
           <label for="tel">Phone</label>
-          <svg class="modal-svg">
-            <use href="./assets/symbol-defs3.svg#icon-phone"></use>
-          </svg>
-          <input type="tel" id="tel">
+          <div class="input">
+            <svg class="modal-svg">
+              <use href="./assets/symbol-defs3.svg#icon-phone"></use>
+            </svg>
+            <input type="tel" id="tel" autocomplete="off">
+          </div>
           <label for="email">Email</label>
-          <svg class="modal-svg">
-            <use href="./assets/symbol-defs3.svg#icon-email"></use>
-          </svg>
-          <input type="email" id="email" name="email">
+          <div class="input">
+            <svg class="modal-svg">
+              <use href="./assets/symbol-defs3.svg#icon-email"></use>
+            </svg>
+            <input type="email" id="email" name="email" autocomplete="on">
+          </div>
           <label for="textarea">Comment</label>
-          <textarea name="comment" id="textarea" cols="30" rows="10"></textarea>
-          <input type="checkbox" name="privacy" id="checkbox" value="privacy-policy">
+          <textarea class="textarea" name="comment" id="textarea" cols="30" rows="10"
+            placeholder="Text input"></textarea>
+          </div>
+           <div class="checkbox-container">
+            <label for="checkbox"></label>
+          <input type="checkbox" name="privacy" id="checkbox" value="privacy-policy" class="checkbox">
+          <p class="text-checkbox">I accept the terms and conditions of the <a href="#">Privacy Policy</a></p>
+        </div>
           <button type="submit" class="submit">Send</button>
         </form>
       </div>
@@ -393,21 +406,24 @@
             <svg>
               <use href="assets/symbol-defs.svg#icon-linkedin"></use>
             </svg>
-          </a>
+          </a></div>
           <div class="subscribe">
             <form>
-              <label for="email">Subscribe</label>
-              <input type="email" name="email" id="email" placeholder="email">
-              <button type="submit">Subscribe</button>
-              <svg>
-                <use href=""></use>
+              <label for="email"></label>
+              <h3>Subscribe</h3>
+              <input type="email" name="email" id="email" placeholder="E-mail">
+              <label class="label-subscribe">
+              <button type="submit" class="button-subscribe">Subscribe</button>
+              <svg class="svg-subscribe">
+                <use href="./assets/subscribe.svg#icon-subscribe"></use>
               </svg>
+            </label>
             </form>
           </div>
-        </div>
       </div>
     </div>
   </footer>
 </body>
 <script src="js/modal.js"></script>
+
 </html>
