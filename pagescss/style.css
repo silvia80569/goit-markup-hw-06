@@ -133,6 +133,7 @@ a {
   visibility: hidden;
   transform: scale(1.1);
 }
+
 .close-btn {
   background-color: var(--cloud);
   border-radius: 50%;
@@ -172,37 +173,57 @@ a {
   width: 40%;
   height: 90%;
   position: relative;
+  border-radius: 3px;
+  box-shadow: 0.5px 10px -5px rgb(0, 0 0/30%);
 }
+
 .form {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 7px;
   color: var(--light-slate);
+  font-size: 1rem;
 }
 
 .input {
   position: relative;
 }
 
-.form input {
+.form-input {
   width: 100%;
   outline: 0;
   padding: 10px 15px;
   border-radius: 5px;
-  border:2px solid var(--light-slate);
+  border: 2px solid var(--light-slate);
   background: transparent;
   color: var(--light-slate);
+  cursor: pointer;
+  padding-left: 35px;
+  font-family: var(--second-family);
+  color: var(--navy-blue);
+  transition: border-color var(--transition)
 }
+
+.form-input:focus {
+  border-color: var(--iris);
+}
+
 
 .modal-svg {
   position: absolute;
-  left: 10px ;
-  bottom:25%;
+  left: 10px;
+  bottom: 25%;
   width: 18px;
   height: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: color var(--transition)
+}
+
+ svg:hover {
+  color: var(--iris);
 }
 
 .textarea {
@@ -211,11 +232,20 @@ a {
   border-color: var(--light-slate);
   resize: none;
   overflow: auto;
+  cursor: pointer;
+  padding-left: 15px;
+  font-family: var(--second-family);
+  color: var(--navy-blue);
+}
+
+.textarea:focus {
+  border-color: var(--iris);
 }
 
 .checkbox-container {
   display: flex;
   justify-content: start;
+
 }
 
 .checkbox {
@@ -225,20 +255,26 @@ a {
   border-radius: 3px;
   border-color: var(--light-slate);
   outline: none;
+  cursor: pointer;
 }
 
 .text-checkbox {
   color: var(--grey);
 }
 
-.submit {
+.form-link:visited {
+  color: var(--iris);
+}
+
+.form-submit {
   width: 159px;
-  height:46px;
+  height: 46px;
   border-radius: 4px;
-  border:none;
+  border: none;
   background-color: var(--iris);
   color: var(--white);
-  margin-left: 40%;
+  margin-left: 35%;
+  cursor: pointer;
 }
 
 /*styles icons*/
@@ -370,7 +406,7 @@ a {
   color: var(--cloud);
   display: flex;
   align-items: center;
-  gap: 100px;
+  gap: 50px;
   height: 400px;
 }
 
@@ -409,6 +445,15 @@ a {
   position: relative;
 }
 
+.footer-input {
+  width: 264px;
+  height: 40px;
+  border: 2px solid var(--white);
+  border-radius: 3px;
+  background: transparent;
+  padding-left: 15px;
+}
+
 .button-subscribe {
   width: 165px;
   height: 40px;
@@ -416,7 +461,11 @@ a {
   background-color: var(--iris);
   color: var(--white);
   border-radius: 3px;
+  font-size: 1rem;
+  color: var(--white);
+  margin-left: 20px;
 }
+
 .svg-subscribe {
   position: absolute;
   right: 15px;

@@ -63,40 +63,43 @@
     <div class="modal is-hidden" data-modal>
       <div class="modal-content">
         <button type="button" class="close-btn" data-modal-close>&times;</button>
-        <h2>Leave your contacts and we will call you back</h2>
-        <form >
+
+        <form>
+          <h2>Leave your contacts and we will call you back</h2>
           <div class="form">
-          <label for="name">Name</label>
-          <div class="input">
-            <svg class="modal-svg">
-              <use href="./assets/symbol-defs3.svg#icon-name"></use>
-            </svg>
-            <input type="text" id="name" name="name" autocomplete="off">
+            <label for="name">Name</label>
+            <div class="input">
+              <svg class="modal-svg">
+                <use href="./assets/symbol-defs3.svg#icon-name"></use>
+              </svg>
+              <input type="text" id="name" name="name" autocomplete="off" placeholder="" class="form-input">
+            </div>
+            <label for="tel">Phone</label>
+            <div class="input">
+              <svg class="modal-svg">
+                <use href="./assets/symbol-defs3.svg#icon-phone"></use>
+              </svg>
+              <input type="tel" id="tel" autocomplete="off" class="form-input">
+            </div>
+            <label for="email">Email</label>
+            <div class="input">
+              <svg class="modal-svg">
+                <use href="./assets/symbol-defs3.svg#icon-email"></use>
+              </svg>
+              <input type="email" id="email" name="email" autocomplete="off" class="form-input">
+            </div>
+            <label for="textarea">Comment</label>
+            <textarea class="textarea" name="comment" id="textarea" cols="30" rows="10"
+              placeholder="Text input"></textarea>
           </div>
-          <label for="tel">Phone</label>
-          <div class="input">
-            <svg class="modal-svg">
-              <use href="./assets/symbol-defs3.svg#icon-phone"></use>
-            </svg>
-            <input type="tel" id="tel" autocomplete="off">
-          </div>
-          <label for="email">Email</label>
-          <div class="input">
-            <svg class="modal-svg">
-              <use href="./assets/symbol-defs3.svg#icon-email"></use>
-            </svg>
-            <input type="email" id="email" name="email" autocomplete="on">
-          </div>
-          <label for="textarea">Comment</label>
-          <textarea class="textarea" name="comment" id="textarea" cols="30" rows="10"
-            placeholder="Text input"></textarea>
-          </div>
-           <div class="checkbox-container">
+          <div class="checkbox-container">
             <label for="checkbox"></label>
-          <input type="checkbox" name="privacy" id="checkbox" value="privacy-policy" class="checkbox">
-          <p class="text-checkbox">I accept the terms and conditions of the <a href="#">Privacy Policy</a></p>
-        </div>
-          <button type="submit" class="submit">Send</button>
+            <input type="checkbox" name="privacy" id="checkbox" value="privacy-policy" class="checkbox">
+            <p class="text-checkbox">I accept the terms and conditions of the <a href="#" class="form-link">Privacy
+                Policy</a></p>
+          </div>
+          <button type="submit" class="form-submit">Send</button>
+
         </form>
       </div>
     </div>
@@ -406,20 +409,21 @@
             <svg>
               <use href="assets/symbol-defs.svg#icon-linkedin"></use>
             </svg>
-          </a></div>
-          <div class="subscribe">
-            <form>
-              <label for="email"></label>
-              <h3>Subscribe</h3>
-              <input type="email" name="email" id="email" placeholder="E-mail">
-              <label class="label-subscribe">
-              <button type="submit" class="button-subscribe">Subscribe</button>
-              <svg class="svg-subscribe">
-                <use href="./assets/subscribe.svg#icon-subscribe"></use>
-              </svg>
-            </label>
-            </form>
-          </div>
+          </a>
+        </div>
+      </div>
+      <div class="subscribe">
+        <form>
+          <label for="email"></label>
+          <h3>Subscribe</h3>
+          <input type="email" name="email" id="email" placeholder="E-mail" class="footer-input">
+          <label class="label-subscribe">
+            <button type="submit" class="button-subscribe">Subscribe</button>
+            <svg class="svg-subscribe">
+              <use href="./assets/subscribe.svg#icon-subscribe"></use>
+            </svg>
+          </label>
+        </form>
       </div>
     </div>
   </footer>
